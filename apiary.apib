@@ -1,0 +1,38 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# test78979
+
+Polls is a simple API allowing consumers to view polls and vote in them.
+
+## Hírek [/article]
+
+### Összes hír [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                
+            }
+        ]
+
+### Egyetlen hír [GET /article/{id}]
+
++ Response 200 (application/json)
+
+    + Attribute(Article)
+
+# Data Structures
+
+## `Article` (object)
+        
++ id: 1 (number)
++ title: 'Lorem ipsum dolor sit amet' (string)
++ lead: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in aliquam nibh, vel ultrices lorem. Vestibulum porttitor ex sit amet rhoncus dignissim. Nullam in quam vitae libero iaculis elementum.' (string)
++ body: 'Pellentesque dictum ipsum luctus mi suscipit viverra quis tincidunt ante. Proin pellentesque convallis aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis et ornare libero, et tempus lacus. Suspendisse malesuada massa non lacinia aliquet. Nullam non mi consequat, tristique justo nec, fermentum leo. In mollis rhoncus turpis, at egestas neque dictum egestas. Donec ultrices eros at sem lacinia commodo. In congue sit amet purus congue commodo. Fusce ultricies sapien imperdiet leo sagittis finibus. Maecenas ut lectus sodales, venenatis ex at, mattis urna. Nam nec mi quam. Phasellus convallis ex et finibus vehicula. Mauris iaculis rutrum felis eu sollicitudin. Fusce in diam a metus ultrices suscipit ut quis diam. Maecenas blandit quis lacus vel vestibulum.' (string)
++ author
+    - name (optional, string, `Lorem Ipsum`)
++ created_at: `0000-00-00 00:00:00` (string)
++ updated_at: `0000-00-00 00:00:00` (string)
++ deleted_at: `0000-00-00 00:00:00` (string)
